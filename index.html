@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tablas</title>
+  <link rel="stylesheet" href="css/tablas.css">
+  <script>
+    // Cambia el color de la celda al hacer clic
+    function cambiarColor(celda) {
+      celda.style.backgroundColor = celda.style.backgroundColor === 'lightblue' ? '' : 'lightblue';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>TABLAS</h1>
+  </header>
+
+  <section>
+    <h2>Tabla de Empresas Bolivianas</h2>
+    <table class="tabla-empresas">
+      <tr>
+        <th>Empresa</th>
+        <th>Sector</th>
+        <th>Ciudad</th>
+        <th>Logo Empresa</th>
+        <th>Contacto</th>
+      </tr>
+      <tr>
+        <td onclick="cambiarColor(this)">
+          <a href="https://www.pilandina.com.bo/" target="_blank">PIL Andina</a>
+        </td>
+        <td onclick="cambiarColor(this)">Alimentos</td>
+        <td onclick="cambiarColor(this)">Cochabamba</td>
+        <td onclick="cambiarColor(this)">
+          <img src="imagenes/pil.png" alt="Logo PIL" width="100">
+        </td>
+        <td onclick="cambiarColor(this)">pil@empresa.bo</td>
+      </tr>
+      <tr>
+        <td onclick="cambiarColor(this)">
+          <a href="https://www.ypfb.gob.bo/" target="_blank">YPFB</a>
+        </td>
+        <td onclick="cambiarColor(this)">Hidrocarburos</td>
+        <td onclick="cambiarColor(this)">La Paz</td>
+        <td onclick="cambiarColor(this)">
+          <img src="imagenes/ypfb.png" alt="Logo YPFB" width="100">
+        </td>
+        <td onclick="cambiarColor(this)">info@ypfb.bo</td>
+      </tr>
+      <tr>
+        <td onclick="cambiarColor(this)">
+          <a href="https://www.viva.com.bo/" target="_blank">Viva</a>
+        </td>
+        <td onclick="cambiarColor(this)">Telecomunicaciones</td>
+        <td onclick="cambiarColor(this)">Santa Cruz</td>
+        <td onclick="cambiarColor(this)">
+          <img src="imagenes/viva.png" alt="Logo Viva" width="100">
+        </td>
+        <td onclick="cambiarColor(this)">contacto@viva.bo</td>
+      </tr>
+      <tr>
+        <td onclick="cambiarColor(this)">
+          <a href="https://www.soboce.com/" target="_blank">SOBOCE</a>
+        </td>
+        <td onclick="cambiarColor(this)">Construcción</td>
+        <td onclick="cambiarColor(this)">La Paz</td>
+        <td onclick="cambiarColor(this)">
+          <img src="imagenes/soboce.png" alt="Logo SOBOCE" width="100">
+        </td>
+        <td onclick="cambiarColor(this)">soboce@empresa.bo</td>
+      </tr>
+      <tr>
+        <td onclick="cambiarColor(this)">
+          <a href="https://www.bisabolivia.com.bo/" target="_blank">Banco BISA</a>
+        </td>
+        <td onclick="cambiarColor(this)">Finanzas</td>
+        <td onclick="cambiarColor(this)">La Paz</td>
+        <td onclick="cambiarColor(this)">
+          <img src="imagenes/bisa.png" alt="Logo BISA" width="100">
+        </td>
+        <td onclick="cambiarColor(this)">contacto@bisa.bo</td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>JOSE KADYR CHOQUE ORELLANA</p>
+  </footer>
+</body>
+</html>
